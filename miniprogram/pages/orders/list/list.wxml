@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="page-title">订单记录</view>
+  <block wx:if="{{loading}}">
+    <view class="loading">加载中...</view>
+  </block>
+  <block wx:else>
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="order-card">
+        <view class="row">
+          <text class="order-no">{{item.orderNo}}</text>
+          <text class="amount">¥{{item.amountYuan}}</text>
+        </view>
+        <view class="subject">{{item.subject}}</view>
+        <view class="status {{item.status}}">{{item.status}}</view>
+        <view class="actions">
+          <button wx:if="{{item.status=='unpaid'}}" size="mini" class="btn-pay" data-id="{{item.id}}" bindtap="pay">支付</button>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>

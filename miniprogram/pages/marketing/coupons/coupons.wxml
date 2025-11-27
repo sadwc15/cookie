@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="page-title">可领取优惠券</view>
+  <block wx:if="{{loading}}">
+    <view class="loading">加载中...</view>
+  </block>
+  <block wx:else>
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="coupon-card">
+        <view class="left">
+          <text class="value">{{item.valueText}}</text>
+          <text class="limit">满{{item.minSpendText}}可用</text>
+        </view>
+        <view class="mid">
+          <text class="title">{{item.title}}</text>
+          <text class="period">{{item.validFrom}} ~ {{item.validTo}}</text>
+          <text class="remain">剩余 {{item.remain}} / {{item.total}}</text>
+        </view>
+        <view class="right">
+          <button
+            size="mini"
+            class="btn-claim"
+            data-id="{{item.id}}"
+            data-index="{{index}}"
+            bindtap="claim"
+            disabled="{{item.claimedByMe || item.remain <= 0}}"
+          >
+            {{ item.claimedByMe ? '已领取' : (item.remain <= 0 ? '已抢完' : '领取') }}
+          </button>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>

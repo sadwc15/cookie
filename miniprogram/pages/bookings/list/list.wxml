@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="page-title">我的预约</view>
+  <block wx:if="{{loading}}">
+    <view class="loading">加载中...</view>
+  </block>
+  <block wx:else>
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="booking-card">
+        <view class="top">
+          <text class="title">{{item.classTitle}}</text>
+          <text class="status {{item.status}}">{{item.status}}</text>
+        </view>
+        <view class="time">{{item.startTime}} - {{item.endTime}}</view>
+        <view class="trainer">教练: {{item.trainerName}}</view>
+      </view>
+    </block>
+  </block>
+</view>

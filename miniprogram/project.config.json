@@ -1,0 +1,11 @@
+{
+  "miniprogramRoot": "",
+  "compileType": "miniprogram",
+  "appid": "wx7df711bbd0a5d120",
+  "projectname": "gym-miniapp",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "minified": true
+  }
+} 

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/auth/login/login",
+    "pages/member/profile/profile",
+    "pages/classes/list/list",
+    "pages/bookings/list/list",
+    "pages/trainers/list/list",
+    "pages/orders/list/list",
+    "pages/marketing/coupons/coupons",
+    "pages/admin/dashboard/dashboard",
+    "pages/trainers/detail/detail",
+    "pages/bookings/create/create",
+    "pages/auth/account/account",
+    "pages/classes/detail/detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "Gym",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classes/list/list",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/bookings/list/list",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/member/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

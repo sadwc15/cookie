@@ -1,0 +1,76 @@
+.page {
+  padding: 24rpx;
+}
+
+.page-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-bottom: 24rpx;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 80rpx;
+  color: #999;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-no {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.amount {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #FF9800;
+}
+
+.subject {
+  font-size: 26rpx;
+  margin-top: 12rpx;
+  color: #333;
+}
+
+.status {
+  font-size: 22rpx;
+  margin-top: 8rpx;
+  display: inline-block;
+  padding: 6rpx 16rpx;
+  border-radius: 16rpx;
+  background: #EEE;
+  color: #666;
+}
+
+.status.paid {
+  background: #DFF5E1;
+  color: #2D7A2D;
+}
+
+.status.unpaid {
+  background: #FFF3CD;
+  color: #B8860B;
+}
+
+.actions {
+  margin-top: 14rpx;
+}
+
+.btn-pay {
+  background: linear-gradient(135deg, #FFE082, #FFC107);
+  color: #333;
+  border: 0;
+}

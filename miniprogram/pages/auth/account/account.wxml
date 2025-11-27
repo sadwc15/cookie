@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="login-card">
+    <text class="title">{{mode === 'login' ? '账号登录' : '新用户注册'}}</text>
+
+    <view class="form-row">
+      <text class="label">账号</text>
+      <input class="input" placeholder="请输入账号" value="{{username}}" bindinput="onInputUsername" />
+    </view>
+
+    <view class="form-row">
+      <text class="label">密码</text>
+      <input class="input" placeholder="请输入密码" password="true" value="{{password}}" bindinput="onInputPassword" />
+    </view>
+
+    <view class="form-row" wx:if="{{mode==='register'}}">
+      <text class="label">昵称</text>
+      <input class="input" placeholder="请输入昵称(可选)" value="{{nickname}}" bindinput="onInputNickname" />
+    </view>
+
+    <button class="btn" loading="{{loading}}" bindtap="submit">{{mode==='login' ? '登录' : '注册'}}</button>
+
+    <view class="switch">
+      <text bindtap="switchMode">{{mode==='login' ? '没有账号？去注册' : '已有账号？去登录'}}</text>
+    </view>
+  </view>
+</view>

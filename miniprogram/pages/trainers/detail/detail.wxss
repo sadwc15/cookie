@@ -1,0 +1,174 @@
+.page {
+  padding: 24rpx;
+  background: linear-gradient(180deg, #FFFBEA 0%, #FFFFFF 45%);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 80rpx;
+  color: #999;
+}
+
+.trainer-card {
+  display: flex;
+  background: #fff;
+  padding: 24rpx;
+  border-radius: 24rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+}
+
+.avatar {
+  width: 88rpx;
+  height: 88rpx;
+  background: linear-gradient(135deg, #FFE082, #FFC107);
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 28rpx;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.bio {
+  font-size: 24rpx;
+  color: #666;
+  margin: 10rpx 0;
+}
+
+.rate {
+  font-size: 24rpx;
+  color: #FF9800;
+  font-weight: 600;
+}
+
+.section {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+  margin-bottom: 24rpx;
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 12rpx;
+  display: block;
+}
+
+.notice text {
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+  margin: 6rpx 0;
+}
+
+.slot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.slot-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 24rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  border: 2rpx solid #eee;
+}
+
+.slot-item.selected {
+  border-color: #FFC107;
+  box-shadow: 0 4rpx 12rpx rgba(255, 193, 7, .25);
+}
+
+.slot-item.disabled {
+  opacity: 0.55;
+}
+
+.slot-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: 600;
+}
+
+.remain {
+  font-size: 22rpx;
+  color: #666;
+  margin-top: 6rpx;
+}
+
+.slot-right {
+  font-size: 22rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 16rpx;
+}
+
+.slot-right.ok {
+  background: #DFF5E1;
+  color: #2D7A2D;
+}
+
+.slot-right.full {
+  background: #EEE;
+  color: #666;
+}
+
+.empty {
+  text-align: center;
+  padding: 40rpx 0;
+  color: #999;
+  font-size: 26rpx;
+}
+
+.bottom-bar {
+  margin-top: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error {
+  color: #D32F2F;
+  font-weight: 700;
+  font-size: 24rpx;
+}
+
+.btn-go {
+  background: linear-gradient(135deg, #FFE082, #FFC107);
+  color: #333;
+  border: 0;
+  padding: 18rpx 32rpx;
+  border-radius: 24rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.btn-go:active {
+  opacity: 0.85;
+}

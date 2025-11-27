@@ -1,0 +1,75 @@
+.page {
+  padding: 24rpx;
+  background: linear-gradient(180deg, #FFFBEA 0%, #FFFFFF 45%);
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-bottom: 26rpx;
+  color: #444;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 80rpx;
+  color: #999;
+}
+
+.card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 26rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-price {
+  font-size: 28rpx;
+  color: #FF9800;
+  font-weight: 600;
+}
+
+.card-body {
+  margin-top: 16rpx;
+}
+
+.card-desc {
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.card-time {
+  font-size: 22rpx;
+  color: #999;
+}
+
+.card-footer {
+  margin-top: 16rpx;
+  display: flex;
+  gap: 16rpx;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 20rpx;
+  background: #FFF3CD;
+  color: #B8860B;
+  padding: 10rpx 16rpx;
+  border-radius: 16rpx;
+}

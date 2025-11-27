@@ -1,0 +1,19 @@
+<view class="page">
+  <view class="page-title">教练团队</view>
+  <block wx:if="{{loading}}">
+    <view class="loading">加载中...</view>
+  </block>
+  <block wx:else>
+    <block wx:for="{{list}}" wx:key="id">
+      <!-- 在每个教练卡片增加跳转 -->
+      <view class="trainer-card" data-id="{{item.id}}" bindtap="goDetail">
+        <view class="avatar">{{item.avatarText}}</view>
+        <view class="info">
+          <text class="name">{{item.name}}</text>
+          <text class="bio">{{item.bio}}</text>
+          <text class="rate">¥{{item.rateYuan}} /小时</text>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>

@@ -1,0 +1,71 @@
+.page {
+  padding: 24rpx;
+}
+
+.page-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-bottom: 24rpx;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 80rpx;
+  color: #999;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20rpx;
+}
+
+.card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+}
+
+.label {
+  font-size: 22rpx;
+  color: #888;
+}
+
+.value {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #FF9800;
+  margin-top: 10rpx;
+}
+
+.chart {
+  margin-top: 24rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+}
+
+.bar {
+  width: 100%;
+  height: 24rpx;
+  background: #eee;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #4CAF50;
+}
+
+.bar-fill.orange {
+  background: #FF9800;
+}
+
+.chart-label {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #666;
+}

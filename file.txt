@@ -1,0 +1,291 @@
+卷 Data 的文件夹 PATH 列表
+卷序列号为 8C48-B2C9
+D:.
+│  .gitattributes
+│  .gitignore
+│  build.gradle
+│  compose.yaml
+│  demoooooo.iml
+│  file.txt
+│  gradlew
+│  gradlew.bat
+│  HELP.md
+│  settings.gradle
+│  
+├─.gradle
+│  ├─8.14.3
+│  │  │  gc.properties
+│  │  │  
+│  │  ├─checksums
+│  │  │      checksums.lock
+│  │  │      md5-checksums.bin
+│  │  │      sha1-checksums.bin
+│  │  │      
+│  │  ├─executionHistory
+│  │  │      executionHistory.lock
+│  │  │      
+│  │  ├─expanded
+│  │  ├─fileChanges
+│  │  │      last-build.bin
+│  │  │      
+│  │  ├─fileHashes
+│  │  │      fileHashes.lock
+│  │  │      
+│  │  └─vcsMetadata
+│  ├─buildOutputCleanup
+│  │      buildOutputCleanup.lock
+│  │      cache.properties
+│  │      
+│  └─vcs-1
+│          gc.properties
+│          
+├─.idea
+│  │  .gitignore
+│  │  compiler.xml
+│  │  copilot.data.migration.agent.xml
+│  │  copilot.data.migration.ask.xml
+│  │  copilot.data.migration.ask2agent.xml
+│  │  copilot.data.migration.edit.xml
+│  │  dataSources.local.xml
+│  │  dataSources.xml
+│  │  encodings.xml
+│  │  gradle.xml
+│  │  jarRepositories.xml
+│  │  misc.xml
+│  │  modules.xml
+│  │  sqldialects.xml
+│  │  workspace.xml
+│  │  
+│  └─dataSources
+│      │  c77195f9-04f1-4a18-b4ca-0a5aeebca8ff.xml
+│      │  
+│      └─c77195f9-04f1-4a18-b4ca-0a5aeebca8ff
+│          └─storage_v2
+│              └─_src_
+│                  └─schema
+│                          information_schema.FNRwLQ.meta
+│                          mysql.osA4Bg.meta
+│                          performance_schema.kIw0nw.meta
+│                          sys.zb4BAA.meta
+│                          
+├─backend
+│  │  pom.xml
+│  │  
+│  ├─src
+│  │  └─main
+│  │      ├─java
+│  │      │  └─com
+│  │      │      └─example
+│  │      │          └─gym
+│  │      │              │  Application.java
+│  │      │              │  
+│  │      │              ├─booking
+│  │      │              │      Booking.java
+│  │      │              │      BookingRepository.java
+│  │      │              │      
+│  │      │              ├─classs
+│  │      │              │      GymClass.java
+│  │      │              │      GymClassRepository.java
+│  │      │              │      
+│  │      │              ├─common
+│  │      │              │      Api.java
+│  │      │              │      
+│  │      │              ├─config
+│  │      │              │      SecurityConfig.java
+│  │      │              │      
+│  │      │              ├─controller
+│  │      │              │      AdminController.java
+│  │      │              │      AuthController.java
+│  │      │              │      ClassController.java
+│  │      │              │      CouponController.java
+│  │      │              │      HealthController.java
+│  │      │              │      MemberController.java
+│  │      │              │      OrderController.java
+│  │      │              │      TrainerController.java
+│  │      │              │      
+│  │      │              ├─coupon
+│  │      │              │      Coupon.java
+│  │      │              │      CouponRepository.java
+│  │      │              │      UserCoupon.java
+│  │      │              │      UserCouponRepository.java
+│  │      │              │      
+│  │      │              ├─order
+│  │      │              │      Order.java
+│  │      │              │      OrderRepository.java
+│  │      │              │      
+│  │      │              ├─security
+│  │      │              │      JwtAuthFilter.java
+│  │      │              │      JwtUtils.java
+│  │      │              │      
+│  │      │              ├─service
+│  │      │              │      PaymentService.java
+│  │      │              │      WechatService.java
+│  │      │              │      
+│  │      │              ├─trainer
+│  │      │              │      Trainer.java
+│  │      │              │      TrainerRepository.java
+│  │      │              │      
+│  │      │              └─user
+│  │      │                      User.java
+│  │      │                      UserRepository.java
+│  │      │                      
+│  │      └─resources
+│  │              Application.yml
+│  │              data.sql
+│  │              
+│  └─target
+│      ├─classes
+│      │  │  Application.yml
+│      │  │  data.sql
+│      │  │  
+│      │  └─com
+│      │      └─example
+│      │          └─gym
+│      │              │  Application.class
+│      │              │  
+│      │              ├─booking
+│      │              │      Booking.class
+│      │              │      BookingRepository.class
+│      │              │      
+│      │              ├─classs
+│      │              │      GymClass.class
+│      │              │      GymClassRepository.class
+│      │              │      
+│      │              ├─common
+│      │              │      Api.class
+│      │              │      
+│      │              ├─config
+│      │              │      SecurityConfig.class
+│      │              │      
+│      │              ├─controller
+│      │              │      AdminController.class
+│      │              │      AuthController$LoginReq.class
+│      │              │      AuthController.class
+│      │              │      ClassController$1Row.class
+│      │              │      ClassController.class
+│      │              │      CouponController.class
+│      │              │      HealthController.class
+│      │              │      MemberController$UpdateReq.class
+│      │              │      MemberController.class
+│      │              │      OrderController$CreateReq.class
+│      │              │      OrderController.class
+│      │              │      TrainerController.class
+│      │              │      
+│      │              ├─coupon
+│      │              │      Coupon.class
+│      │              │      CouponRepository.class
+│      │              │      UserCoupon.class
+│      │              │      UserCouponRepository.class
+│      │              │      
+│      │              ├─order
+│      │              │      Order.class
+│      │              │      OrderRepository.class
+│      │              │      
+│      │              ├─security
+│      │              │      JwtAuthFilter.class
+│      │              │      JwtUtils.class
+│      │              │      
+│      │              ├─service
+│      │              │      PaymentService.class
+│      │              │      WechatService.class
+│      │              │      
+│      │              ├─trainer
+│      │              │      Trainer.class
+│      │              │      TrainerRepository.class
+│      │              │      
+│      │              └─user
+│      │                      User.class
+│      │                      UserRepository.class
+│      │                      
+│      └─generated-sources
+│          └─annotations
+├─build
+│  └─reports
+│      └─problems
+│              problems-report.html
+│              
+├─gradle
+│  └─wrapper
+│          gradle-wrapper.jar
+│          gradle-wrapper.properties
+│          
+└─miniprogram
+    │  app.json
+    │  config.js
+    │  project.config.json
+    │  project.private.config.json
+    │  sitemap.json
+    │  
+    ├─pages
+    │  ├─admin
+    │  │  └─dashboard
+    │  │          dashboard.js
+    │  │          dashboard.json
+    │  │          dashboard.wxml
+    │  │          dashboard.wxss
+    │  │          
+    │  ├─auth
+    │  │  │  config.js
+    │  │  │  
+    │  │  ├─login
+    │  │  │      login.js
+    │  │  │      login.json
+    │  │  │      login.wxml
+    │  │  │      login.wxss
+    │  │  │      
+    │  │  └─utils
+    │  │          request.js
+    │  │          
+    │  ├─bookings
+    │  │  └─list
+    │  │          list.js
+    │  │          list.json
+    │  │          list.wxml
+    │  │          list.wxss
+    │  │          
+    │  ├─classes
+    │  │  └─list
+    │  │          list.js
+    │  │          list.json
+    │  │          list.wxml
+    │  │          list.wxss
+    │  │          
+    │  ├─index
+    │  │      index.js
+    │  │      index.json
+    │  │      index.wxml
+    │  │      index.wxss
+    │  │      
+    │  ├─marketing
+    │  │  └─coupons
+    │  │          coupons.js
+    │  │          coupons.json
+    │  │          coupons.wxml
+    │  │          coupons.wxss
+    │  │          
+    │  ├─member
+    │  │  └─profile
+    │  │          profile.js
+    │  │          profile.json
+    │  │          profile.wxml
+    │  │          profile.wxss
+    │  │          
+    │  ├─orders
+    │  │  └─list
+    │  │          list.js
+    │  │          list.json
+    │  │          list.wxml
+    │  │          list.wxss
+    │  │          
+    │  └─trainers
+    │      └─list
+    │              list.js
+    │              list.json
+    │              list.wxml
+    │              list.wxss
+    │              
+    └─utils
+            app.js
+            app.wxss
+            request.js
+            

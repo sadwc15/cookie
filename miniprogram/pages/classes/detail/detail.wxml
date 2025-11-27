@@ -1,0 +1,31 @@
+<view class="page">
+  <block wx:if="{{loading}}">
+    <view class="loading">加载中...</view>
+  </block>
+  <block wx:else>
+    <view class="box">
+      <text class="title">{{cls.title}}</text>
+      <text class="price">价格：¥{{cls.priceYuan}}</text>
+      <text class="desc">{{cls.desc}}</text>
+    </view>
+
+    <view class="box">
+      <text class="sub-title">预约时段</text>
+      <block wx:for="{{slots}}" wx:key="slotId">
+        <view class="slot {{selectedSlotId==item.slotId?'selected':''}}" data-id="{{item.slotId}}" bindtap="selectSlot">
+          <text>{{item.startTime}} ~ {{item.endTime}}</text>
+          <text class="remain">剩余：{{item.remain}}</text>
+          <text class="badge {{item.statusClass}}">{{item.statusText}}</text>
+        </view>
+      </block>
+      <block wx:if="{{slots.length==0}}">
+        <view class="empty">暂无时段</view>
+      </block>
+    </view>
+
+    <view class="bottom-bar">
+      <text class="error" wx:if="{{errorText}}">{{errorText}}</text>
+      <button class="btn" bindtap="goReserve">预约</button>
+    </view>
+  </block>
+</view>

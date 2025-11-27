@@ -1,0 +1,81 @@
+.page {
+  padding: 24rpx;
+}
+
+.page-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-bottom: 24rpx;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 80rpx;
+  color: #999;
+}
+
+.coupon-card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 20rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+  display: flex;
+}
+
+.left {
+  width: 160rpx;
+  border-right: 2rpx dashed #FFE082;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.value {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #FF9800;
+}
+
+.limit {
+  font-size: 20rpx;
+  color: #999;
+  margin-top: 8rpx;
+}
+
+.mid {
+  flex: 1;
+  padding: 0 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.period {
+  font-size: 20rpx;
+  color: #666;
+  margin-top: 6rpx;
+}
+
+.remain {
+  font-size: 20rpx;
+  color: #B8860B;
+  margin-top: 6rpx;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.btn-claim {
+  background: linear-gradient(135deg, #FFE082, #FFC107);
+  color: #333;
+  border: 0;
+}

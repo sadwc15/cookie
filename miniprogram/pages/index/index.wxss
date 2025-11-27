@@ -1,0 +1,106 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #FFFBEA 0%, #FFFFFF 45%);
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+.hero {
+  padding: 40rpx 32rpx 24rpx;
+  border-radius: 28rpx;
+  background: linear-gradient(135deg, #FFE082 0%, #FFC107 60%, #FFB300 100%);
+  color: #fff;
+  box-shadow: 0 10rpx 28rpx rgba(255, 193, 7, .4);
+  margin-bottom: 36rpx;
+}
+
+.brand-main {
+  font-size: 44rpx;
+  font-weight: 700;
+}
+
+.brand-sub {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  opacity: .9;
+  display: block;
+}
+
+.login-bar {
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+}
+
+.login-status {
+  background: #fff;
+  color: #333;
+  padding: 10rpx 24rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+}
+
+.login-btn {
+  background: #fff;
+  color: #FF9800;
+  border: 0;
+  font-size: 26rpx;
+  padding: 10rpx 24rpx;
+  border-radius: 24rpx;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 22rpx;
+}
+
+.nav-card {
+  display: flex;
+  align-items: center;
+  padding: 26rpx 30rpx;
+  border-radius: 26rpx;
+  background: #fff;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .06);
+  transition: .16s;
+}
+
+.nav-card:active {
+  transform: scale(.97);
+  box-shadow: 0 4rpx 14rpx rgba(0, 0, 0, .09);
+}
+
+.icon-badge {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, #FFECB3 0%, var(--badge-color) 65%, #FFB300 100%);
+  box-shadow: 0 5rpx 14rpx rgba(255, 193, 7, .45);
+  margin-right: 32rpx;
+}
+
+.nav-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8rpx;
+}
+
+.nav-desc {
+  font-size: 22rpx;
+  color: #888;
+}
+
+.nav-arrow {
+  opacity: .25;
+  transform: rotate(-90deg);
+}

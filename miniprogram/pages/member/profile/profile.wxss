@@ -1,0 +1,71 @@
+.page {
+  padding: 24rpx;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 24rpx;
+  border-radius: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  background: #FFC107;
+}
+
+.info {
+  margin-left: 24rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+.sub {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.menu {
+  margin-top: 24rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, .05);
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-title {
+  font-size: 28rpx;
+  color: #444;
+}
+
+.arrow {
+  color: #aaa;
+}
+
+.btn-logout {
+  margin-top: 24rpx;
+  background: #fff;
+  color: #FF9800;
+  border: 2rpx solid #FF9800;
+  border-radius: 24rpx;
+}

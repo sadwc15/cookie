@@ -1,0 +1,42 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gym?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    # 可选：显式声明驱动（多数情况下不需要）
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none          # 使用 data.sql 中的建表，不让 Hibernate 自动建表
+    properties:
+        format_sql: true
+    open-in-view: false
+    show-sql: true            # 调试期打印 SQL
+  sql:
+      data-locations: classpath:data.sql
+      # 如果以后拆分 schema.sql，可再加:
+      # schema-locations: classpath:schema.sql
+
+  # Flyway 改为禁用（如仍留依赖不会执行）
+  flyway:
+    enabled: false
+
+app:
+  # 请务必改成 ≥32 字符随机值，生产环境不要使用示例字符串
+  jwt-secret: e93b3043-43bd-4637-bbd7-8f8d73588c57
+  jwt-exp-days: 30  
+  wechat:
+    appid: "wx7df711bbd0a5d120"
+    secret: "123456"                     # 留空 => 使用 mock 登录逻辑；填入后端才会请求 code2Session
+  cors:
+    allowed-origins: "*"           # 生产建议改成具体域名列表
+    # 如果实现了自定义 CORS，可在 SecurityConfig 里使用该值
+
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE   # 可选：查看绑定参数

@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="hero">
+    <text class="brand-main">健身管理中心</text>
+    <text class="brand-sub">科学训练 · 合理营养 · 持续进步</text>
+    <view class="login-bar">
+      <block wx:if="{{hasToken}}">
+        <text class="login-status">已登录</text>
+      </block>
+      <block wx:else>
+        <button class="login-btn" size="mini" bindtap="goLogin">登录</button>
+      </block>
+    </view>
+  </view>
+
+  <view class="grid">
+    <block wx:for="{{navItems}}" wx:key="title">
+      <block wx:if="{{!item.adminOnly || isAdmin}}">
+        <view class="nav-card" data-url="{{item.url}}" bindtap="onNavTap">
+          <view class="icon-badge" style="--badge-color: {{item.color}};">
+            <icon type="{{item.icon}}" size="30" color="#fff" />
+          </view>
+          <view class="nav-text">
+            <text class="nav-title">{{item.title}}</text>
+            <text class="nav-desc">{{item.desc}}</text>
+          </view>
+          <icon type="clear" size="22" class="nav-arrow" />
+        </view>
+      </block>
+    </block>
+  </view>
+</view>
